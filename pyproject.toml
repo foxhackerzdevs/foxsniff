@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foxsniff"
+version = "0.1.0"
+description = "Minimal raw-socket IPv4 packet sniffer for Linux, no dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+foxsniff = "sniffer.sniffer:main"
+
+[project.urls]
+"Source" = "https://github.com/foxhackerzdevs/foxsniff"
+
+[tool.setuptools]
+packages = ["sniffer"]
+package-dir = { "" = "src" }
